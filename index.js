@@ -1,4 +1,3 @@
-console.log("Hello");
 // 1.Task: Array Filtering and Mapping
 // Create an array of objects, each representing a person with properties like name, age, and gender. Write a function to filter out all females and then map the remaining people to an array of names. Print the final result.
 
@@ -7,6 +6,43 @@ console.log("Hello");
 
 // 3.Task: Function Composition
 // Write three functions: one to square a number, one to double a number, and one to add 5 to a number. Compose these functions to create a new function that squares a number, doubles the result, and then adds 5.
+
+// Make square Number
+
+function squareNumber(num) {
+  return num * num;
+}
+
+const square = squareNumber(5);
+// console.log(square);
+
+// make double number
+function doubleNumber(num) {
+  return num * 2;
+}
+
+const double = doubleNumber(5);
+// console.log(double);
+
+// make add number
+function addNumber(num) {
+  //   return num + num;
+}
+
+const add = addNumber(5 + 5);
+// console.log(add);
+
+// function to square a number, double the squared result and add 5 with doubled number
+
+function mathFun(num) {
+  const square = num * num;
+  const double = square * 2;
+  const add = double + 5;
+  return add;
+}
+
+const res = mathFun(5);
+console.log(res);
 
 // 4.Task: Sorting Objects
 // Create an array of objects representing cars with properties like make, model, and year. Write a function to sort the array of cars by the year of manufacture in ascending order. Print the sorted array.
